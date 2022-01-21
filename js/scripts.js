@@ -1,13 +1,18 @@
 function mrRoboger(num) {
-  if (num === 0) {
-    return "0";
-  } 
+  let numberArray = num.split('');
+  let responseArray = []
+  if (numberArray.forEach(function(digit) {
+    if (digit === 0);
+    responseArray.push('"0"');
+    return responseArray;
+  }));
 }
+
 
 $(document).ready(function() {
   $("form#roboger").submit(function(event) {
     event.preventDefault();
-    let num = $("input#num").val();
+    let num = parseInt($("input#num").val());
     let result = mrRoboger(num); 
     console.log(num);
     console.log(result);
