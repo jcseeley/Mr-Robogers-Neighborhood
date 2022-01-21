@@ -3,12 +3,15 @@ function mrRoboger(num) {
     return 0;
   }
 }
-
+console.log(result);
 $(document).ready(function() {
   $("form#roboger").submit(function(event) {
-    event.PreventDefault();
-    const num = $("input#num").val();
-    let result = mrRoboger(num).val();
+    event.preventDefault();
+    var num = $("input#num").val();
+    let result = mrRoboger(num);
+    console.log(num);
+    
     $("#response").text(result);
-  }
-}
+    
+  });
+});
