@@ -25,19 +25,20 @@ This page was designed to allow you to chat with Mr. Roboger. Type a number into
 
 ## Tests
 
-- Describe: mrRoboger()
-Test: "It should return zero if num is equal to zero."
+- Describe: mrRoboger(num)
+Test: "It should return "Won't you be my neighbor?" if string includes '3'"
 Code: 
-const num = 0
-mrRoboger(0);
-Expected Output: 0
-
-
-- Describe: mrRoboger()
-Test: "It should return "Won't you be my neighbor?" if num includes 3."
-Code:
 const num = 3
-mrRoboger(3)
+mrRoboger(3);
+Expected Output: "Won't you be my neighbor?"
+
+
+- Describe: mrRoboger(num)
+Test: "It should return "Boop!" if string includes 2."
+Code:
+const num = 2
+mrRoboger(2)
+Expected Output "Boop!"
 
 
 ## Known Bugs
