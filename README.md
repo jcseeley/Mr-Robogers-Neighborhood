@@ -25,16 +25,20 @@ This page was designed to allow you to chat with Mr. Roboger. Type a number into
 
 ## Tests
 
-Describe: mrRoboger()
-
+- Describe: mrRoboger()
 Test: "It should return zero if num is equal to zero."
-
 Code: 
-
 const num = 0
 mrRoboger(0);
-
 Expected Output: 0
+
+
+- Describe: mrRoboger()
+Test: "It should return "Won't you be my neighbor?" if num includes 3."
+Code:
+const num = 3
+mrRoboger(3)
+
 
 ## Known Bugs
 
