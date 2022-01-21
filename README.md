@@ -27,9 +27,12 @@ This page was designed to allow you to chat with Mr. Roboger. Type a number into
 
 Describe: mrRoboger()
 
-Test: It should return zero if input is equal to zero.
+Test: "It should return zero if num is equal to zero."
 
-Code: If input equals zero, return zero.
+Code: 
+
+const num = 0
+mrRoboger(0);
 
 Expected Output: 0
 
