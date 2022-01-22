@@ -3,9 +3,10 @@ function mrRoboger(num) {
   let numArray = num.toString().split('');
   numArray.forEach(function(digit) {
     if (numArray.includes('3')) {
-    responseArray.push(('"') + ("Won't you be my neighbor?") + ('"'));
-  }
-});
+    responseArray.push((' "') + ("Won't you be my neighbor?") + ('"'));
+    }
+  });
+  
   return responseArray;
 }
 
