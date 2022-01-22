@@ -1,11 +1,12 @@
 function mrRoboger(num) {
   let responseArray = [];
-  let numString = num.toString();
   let numArray = num.toString().split('');
-  if (numString.includes('3')) {
-    responseArray.push("Won't you be my neighbor?");
-    return responseArray;
+  numArray.forEach(function(digit) {
+    if (numArray.includes('3')) {
+    responseArray.push(('"') + ("Won't you be my neighbor?") + ('"'));
   }
+});
+  return responseArray;
 }
 
 
