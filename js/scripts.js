@@ -45,8 +45,6 @@ $(document).ready(function() {
     event.preventDefault();
     let num = $("input#num").val();
     result = mrRoboger(num);
-    console.log(num);
-    console.log(result);
     $("#response").html(result);
   });
 });
