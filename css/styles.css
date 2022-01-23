@@ -1,0 +1,10 @@
+body {
+  background-image: url(https://www.misterrogers.org/wp-content/uploads/2018/09/Pinchable-Neighborhood-Cropped-smaller.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+#title {
+  text-align: center;
+  text-decoration: underline;
+}
