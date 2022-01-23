@@ -49,6 +49,5 @@ $(document).ready(function() {
     $("#name-response").text("n1c3 t0 m33t y0u, " + name + "!")
     $("#response").text(result);
     $("#result-div").show();
-    $("#name-div").show();
   });
 });

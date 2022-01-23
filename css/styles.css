@@ -2,7 +2,7 @@ body {
   font-family: monospace;
   background-image: url('../img/Robot_City.jpg');
   background-position: top;
-  color:limegreen;
+  color:papayawhip;
 }
 
 #title {
@@ -15,10 +15,9 @@ body {
   font-size: x-large;
 }
 
-#name-div, #result-div {
+#result-div {
   display: none;
   text-align: center;
-  color: white;
   font-size: x-large;
   font-weight: bold;
 }
