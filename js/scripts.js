@@ -8,7 +8,7 @@ function mrRoboger(num) {
     for (let i = 0; i < numArray.length; i += 1) {
       if (numArray[i] === '3') {
       threeFlag = true;
-      responseArray.push((' "') + ("Won't you be my neighbor?") + ('"'));
+      responseArray.push((' "') + ("w0n't y0u b3 mY n31gHb0r?") + ('"'));
       break;
       } 
     } return responseArray;
@@ -17,7 +17,7 @@ function mrRoboger(num) {
     for (let i = 0; i < numArray.length; i += 1) {
       if (numArray[i] === '2') {
       twoFlag = true;
-      responseArray.push(('"') + ("Boop!") + ('"'));
+      responseArray.push(('"') + ("B00p!") + ('"'));
       break;
       }
     } return responseArray;
@@ -26,7 +26,7 @@ function mrRoboger(num) {
     for (let i = 0; i < numArray.length; i += 1) {
       if (numArray[i] === '1') {
       oneFlag = true;
-      responseArray.push(('"') + ("Beep!") + ('"'));
+      responseArray.push(('"') + ("B33p!") + ('"'));
       break;
       }
     } return responseArray;
@@ -35,7 +35,7 @@ function mrRoboger(num) {
       if (i <= num) {
         responseArray.push((' ') + (i));
       }
-    } responseArray.unshift((' "0",') + (' "Beep!",') + (' "Boop!",') + (' "') + ("Won't you be my neighbor?") + ('"'));
+    } responseArray.unshift((' "0",') + (' "B33p!",') + (' "B00p!",') + (' "') + ("w0n't y0u b3 mY n31gHb0r?") + ('"'));
     return responseArray.join();
   }
 }
@@ -44,8 +44,11 @@ $(document).ready(function() {
   $("form#roboger").submit(function(event) {
     event.preventDefault();
     let num = $("input#num").val();
-    const name = $(input#name).val();
+    const name = $("input#name").val();
     result = mrRoboger(num);
-    $("#response").html(result);
+    $("#name-response").text("n1c3 t0 m33t y0u, " + name + "!")
+    $("#response").text(result);
+    $("#result-div").show();
+    $("#name-div").show();
   });
 });
