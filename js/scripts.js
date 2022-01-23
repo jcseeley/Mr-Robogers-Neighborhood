@@ -44,6 +44,7 @@ $(document).ready(function() {
   $("form#roboger").submit(function(event) {
     event.preventDefault();
     let num = $("input#num").val();
+    const name = $(input#name).val();
     result = mrRoboger(num);
     $("#response").html(result);
   });
