@@ -39,6 +39,7 @@ function mrRoboger(num) {
     return responseArray.join();
   }
 }
+
 $(document).ready(function() {
   $("form#roboger").submit(function(event) {
     event.preventDefault();
