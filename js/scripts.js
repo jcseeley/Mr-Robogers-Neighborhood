@@ -2,7 +2,7 @@ function mrRoboger(num) {
   let responseArray = [];
   let numArray = num.toString().split('');
   if (num === '0') {
-    return ' "0"';
+    return '"0"';
   } else if (numArray.includes('3')) {
     let threeFlag = false;
     for (let i = 0; i < numArray.length; i += 1) {
