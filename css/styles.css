@@ -16,7 +16,6 @@ body {
 }
 
 #result-div {
-  display: none;
   text-align: center;
   font-size: x-large;
   font-weight: bold;

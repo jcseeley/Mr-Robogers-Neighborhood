@@ -1,53 +1,39 @@
-function mrRoboger(num) {
-  let responseArray = [];
-  let numArray = num.toString().split('');
-  if (num === '0') {
-    return '"0"';
-  } else if (numArray.includes('3')) {
-    let threeFlag = false;
-    for (let i = 0; i < numArray.length; i += 1) {
-      if (numArray[i] === '3') {
-      threeFlag = true;
-      responseArray.push((' "') + ("w0n't y0u b3 mY n31gHb0r?") + ('"'));
-      break;
-      } 
-    } return responseArray;
-  } else if (numArray.includes('2')) {
-    let twoFlag = false;
-    for (let i = 0; i < numArray.length; i += 1) {
-      if (numArray[i] === '2') {
-      twoFlag = true;
-      responseArray.push(('"') + ("B00p!") + ('"'));
-      break;
-      }
-    } return responseArray;
-  } else if (numArray.includes('1')) {
-    let oneFlag = false;
-    for (let i = 0; i < numArray.length; i += 1) {
-      if (numArray[i] === '1') {
-      oneFlag = true;
-      responseArray.push(('"') + ("B33p!") + ('"'));
-      break;
-      }
-    } return responseArray;
-  } else (num > 3); {
-    for (let i = 4; i <= num; i += 1) {
+function numberArray(num) {
+  let newNumArray = [];
+  if (num >= 0) {
+    for (let i = 0; i <= num; i++) {
       if (i <= num) {
-        responseArray.push((' ') + (i));
-      }
-    } responseArray.unshift((' "0",') + (' "B33p!",') + (' "B00p!",') + (' "') + ("w0n't y0u b3 mY n31gHb0r?") + ('"'));
-    return responseArray.join();
+      newNumArray.push(i.toString());
+      } 
+    } return newNumArray;
   }
+}
+
+function mrRoboger() {
+  let responseArray = [];
+  stringArray.forEach(function(strNum) {
+    if (strNum.includes('3')) {
+      responseArray.push(('"') + ("w0n't y0u b3 mY n31gHb0r, ") + userName + ('?"'));
+    } else if (strNum.includes('2')) {
+      responseArray.push(('"') + ("B00p!") + ('"'));
+    } else if (strNum.includes('1')) {
+      responseArray.push(('"') + ("B33p!") + ('"'));
+    } else if (strNum === '0') {
+      responseArray.push('"0"');
+    } else {
+      responseArray.push(strNum);
+    }
+  })
+  return responseArray.join(", ");
 }
 
 $(document).ready(function() {
   $("form#roboger").submit(function(event) {
     event.preventDefault();
+    userName = $("input#name").val();
     let num = $("input#num").val();
-    const name = $("input#name").val();
-    result = mrRoboger(num);
-    $("#name-response").text("n1c3 t0 m33t y0u, " + name + "!")
+    stringArray = numberArray(num);
+    result = mrRoboger();
     $("#response").text(result);
-    $("#result-div").show();
   });
 });
