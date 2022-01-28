@@ -35,5 +35,6 @@ $(document).ready(function() {
     const stringArray = numberArray(num);
     const result = mrRoboger(stringArray, userName);
     $("#response").text(result);
+    $(".transbox").fadeIn();
   });
 });
