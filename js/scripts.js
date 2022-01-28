@@ -9,7 +9,7 @@ function numberArray(num) {
   }
 }
 
-function mrRoboger() {
+function mrRoboger(stringArray, userName) {
   let responseArray = [];
   stringArray.forEach(function(strNum) {
     if (strNum.includes('3')) {
@@ -30,10 +30,10 @@ function mrRoboger() {
 $(document).ready(function() {
   $("form#roboger").submit(function(event) {
     event.preventDefault();
-    userName = $("input#name").val();
-    let num = $("input#num").val();
-    stringArray = numberArray(num);
-    result = mrRoboger();
+    const userName = $("input#name").val();
+    const num = $("input#num").val();
+    const stringArray = numberArray(num);
+    const result = mrRoboger(stringArray, userName);
     $("#response").text(result);
   });
 });
