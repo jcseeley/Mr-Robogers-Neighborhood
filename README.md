@@ -2,7 +2,8 @@
 
 #### By Jase Seeley
 
-#### Talk to Mr. Roboger by inputting a number. 
+#### Epicodus Week #3 Independent Code Review: Arrays & Looping  
+* Talk to Mr. Roboger by inputting a number. 
 
 ## Technologies Used
 
